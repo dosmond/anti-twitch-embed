@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Anti twitch embed",
+  "version": "1.0",
+  "description": "A chrome extension to remove twitch embeds from websites. This is useful if you don't want to see twitch embeds on websites like fextralife.",
+  "icons": {
+    "16": "images/icon-16.png",
+    "32": "images/icon-32.png",
+    "96": "images/icon-96.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/anti-embed.js"],
+      "matches": [
+        "https://*/*"
+      ]
+    }
+  ],
+  "permissions": ["activeTab"]
+}
